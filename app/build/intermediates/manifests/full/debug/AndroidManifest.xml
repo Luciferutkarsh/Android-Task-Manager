@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bachelorshelter.tanvir.cutmytask"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/my_app_luncher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/my_app_luncher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bachelorshelter.tanvir.cutmytask.activities.SplashActivity"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bachelorshelter.tanvir.cutmytask.activities.MainActivity"
+            android:label="@string/today"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.bachelorshelter.tanvir.cutmytask.activities.UnfinishedTaskActivity"
+            android:label="@string/title_unfinished_task" >
+        </activity>
+        <activity
+            android:name="com.bachelorshelter.tanvir.cutmytask.activities.TaskEditActivity"
+            android:label="@string/task" >
+        </activity>
+    </application>
+
+</manifest>
